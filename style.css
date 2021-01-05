@@ -1,0 +1,97 @@
+/* Main area */
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(25, 161, 173);
+
+}
+/* Profile card component */
+.profile-card-component{
+    overflow: hidden;
+    height: 280px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 5%;
+}
+/* Card background pattern */
+.profile-card-component .card-background img{
+    height: 50%;
+    width: 100%;
+}
+main{
+
+}
+/* Profile Picture */
+.profile-picture-icon{
+    border: 2px solid white ;
+}
+.profile-picture-icon img{
+    border-radius: 50%;
+}
+
+/* Card Component User info section */
+/* .user-base-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+/* section{
+
+} */
+section .user-base-info{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+section .user-base-info .base-data{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    /* padding: 5px; */
+}
+section .user-base-info .base-data div{
+    display: flex;
+    flex-direction: row;
+    /* margin: 5px; */
+    padding: 5px;
+}
+section .profile-icon{
+
+}
+
+/* Profile Stats */
+section .user-base-info .profile-stats{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    height: 50px;
+    padding:0
+}
+section .user-base-info .profile-stats .profile-stats-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 5px;
+}
+section .user-base-info .profile-stats .profile-stats-unit .stat-count{
+    margin: 5px 0px;
+}
+section .user-base-info .profile-stats .profile-stats-unit > .stat-count h6{
+    margin:0;
+    font-size: 15px;
+}
+section .user-base-info .profile-stats .profile-stats-unit > .stat-count a{
+    font-size: 10px;
+    
+}

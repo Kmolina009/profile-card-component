@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,35 +16,40 @@
   </style>
 </head>
 <body>
-  <article>
-    <div class="card-background"></div>
+  <article class=profile-card-component>
+    <div class="card-background">
+      <img src="images/bg-pattern-card.svg" alt="Card background pattern, blue clover petals">
+    </div>
     <main>
-      <figure class.profile-picture-icon></figure>
+      <figure class="profile-picture-icon">
+        <img src="images/image-victor.jpg" alt="">
+      </figure>
     <section>
-      <ul class="user-base-info">
-          <li class="username">
-            Victor Crest
-          </li>
-          <li class="user-age">
-            26
-          </li>
-          <li class="location">
+      <div class="user-base-info">
+        <div class=base-data>
+          <div class="username">
+              Victor Crest
+            </div>
+            <div class="user-age">
+              26
+            </div>
+        </div>  
+      
+          <div class="location">
             London
-          </li>
-        </ul>
+          </siv>
+        </div>
         <ul class="profile-stats">
           <li class="profile-stats-unit">
-            <div class="num-of-followers">
-              <h6 class="followe-count">
+              <h6 class="stat-count">
                 80K
               </h6>
               <a href="#">
                 Followers
               </a>
-            </div>
           </li>
           <li class="profile-stats-unit">
-            <h6 class="like-count">
+            <h6 class="stat-count">
               803K
             </h6>
             <a href="#">
@@ -51,7 +57,7 @@
             </a>
           </li>
           <li class="profile-stats-unit">
-            <h6 class="photo-count">
+            <h6 class="stat-count">
               1.4K
             </h6>
             <a href="#">
