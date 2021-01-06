@@ -12,25 +12,37 @@ body{
 /* Profile card component */
 .profile-card-component{
     overflow: hidden;
-    height: 280px;
+    height: 370px;
     width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-shrink: inherit;
     background-color: white;
     border-radius: 5%;
 }
 /* Card background pattern */
-.profile-card-component .card-background img{
-    height: 50%;
+.profile-card-component .card-background{
+    height: 30%;
     width: 100%;
+    overflow:visible
+}
+.profile-card-component .card-background img{
+    height: 100%;
+    width: 100%;
+    /* overflow:unset; */
 }
 main{
-
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: visible;
+    bottom:80px;
 }
 /* Profile Picture */
 .profile-picture-icon{
-    border: 2px solid white ;
+    border-radius: 50%;
+    border: 5px solid white ;
 }
 .profile-picture-icon img{
     border-radius: 50%;
