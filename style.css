@@ -34,7 +34,7 @@ body article{
 /* Background Patterns */
 .bg-pattern{
     height:722px;
-    widows: 3000px;
+    /* width: 3000px; */
     position: absolute;
     z-index: -1;
     overflow: visible;
@@ -59,12 +59,16 @@ body article{
     height: 750px;   
     rotate: 1 -0.5 1 180deg
 }
+
+
 /* Profile card component */
 .profile-card-component{
     font-family: "Kumbh-Sans", sans-serif;
     overflow: hidden;
-    height: 370px;
-    width: 350px;
+    /* height: 370px; */
+    height: 374px;
+    /* width: 350px; */
+    width: 326px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,3 +175,31 @@ section .user-base-info .base-data .username, section .user-base-info .profile-s
     font-size: 18px;
     font-weight: 700;
 }
+/* Media Query for mobile */
+@media(max-device-width:375px){
+    body{
+        /* display: flex;
+        justify-content: center;
+        justify-items: center; */
+        height: inherit;
+        width: 375px;
+        margin: 0 auto;
+    }
+    .profile-card-component{
+        display: flex;
+        margin-top: 22%;
+        margin-left:6%;
+        margin-right: 6%;
+        height: 374px;
+        width: 326px;
+    }
+    .background-pattern{
+        width:inherit;
+        height: inherit;
+    }
+    .background-pattern-top{
+        height: 50%;
+        bottom: 10px;
+        right: 50px;
+        rotate: 50deg;
+    }
