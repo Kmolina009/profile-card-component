@@ -10,15 +10,11 @@
     src:url(https://fonts.google.com/specimen/Kumbh+Sans);
 
 }
-/* Variable */
-/* --secondary-color(0, 0%, 59%); */
 /* Main area */
-html{
-    height: 722px;
-}
+
 body{
-    height: 722px;
-    width: 1440px;
+    max-height: 722px;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -178,9 +174,9 @@ section .user-base-info .base-data .username, section .user-base-info .profile-s
 /* Media Query for mobile */
 @media(max-device-width:375px){
     body{
-        /* display: flex;
+        display: flex;
         justify-content: center;
-        justify-items: center; */
+        justify-items: center;
         height: inherit;
         width: 375px;
         margin: 0 auto;
@@ -192,6 +188,9 @@ section .user-base-info .base-data .username, section .user-base-info .profile-s
         margin-right: 6%;
         height: 374px;
         width: 326px;
+        position: relative;
+        left:30%;
+        /* right:50%; */
     }
     .background-pattern{
         width:inherit;
@@ -203,3 +202,8 @@ section .user-base-info .base-data .username, section .user-base-info .profile-s
         right: 50px;
         rotate: 50deg;
     }
+    .attribution{
+        position: relative;
+        left:110px;
+    }
+}
