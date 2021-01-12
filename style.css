@@ -1,7 +1,25 @@
+/*CSS Reset-Lite*/
+*,::before,::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Imported fonts*/
+@font-face{
+    font-family: Kumbh-Sans;
+    src:url(https://fonts.google.com/specimen/Kumbh+Sans);
+
+}
+/* Variable */
+/* --secondary-color(0, 0%, 59%); */
 /* Main area */
+html{
+    height: 722px;
+}
 body{
-    height: 100vh;
-    width: 100vw;
+    height: 722px;
+    width: 1440px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -9,23 +27,58 @@ body{
     background-color: rgb(25, 161, 173);
 
 }
+body article{
+    margin: 10%;
+}
+
+/* Background Patterns */
+.bg-pattern{
+    height:722px;
+    widows: 3000px;
+    position: absolute;
+    z-index: -1;
+    overflow: visible;
+    height: 100%;
+}
+.bg-pattern-top{
+    z-index: -1;
+    overflow:visible;
+    position: relative;
+    height: 750px;
+    right: 50px;
+    bottom:300px;
+    rotate: 1 -0.5 1 25deg;
+}
+.bg-pattern-bottom{
+    z-index: -2;
+    overflow:visible;
+    position: relative;
+    left:50px;
+    /* left:5%; */
+    top:300px;
+    height: 750px;   
+    rotate: 1 -0.5 1 180deg
+}
 /* Profile card component */
 .profile-card-component{
+    font-family: "Kumbh-Sans", sans-serif;
     overflow: hidden;
     height: 370px;
     width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
     flex-shrink: inherit;
     background-color: white;
     border-radius: 5%;
 }
 /* Card background pattern */
 .profile-card-component .card-background{
-    height: 30%;
+    height: 133px;
     width: 100%;
-    overflow:visible
+    overflow:visible;
+
 }
 .profile-card-component .card-background img{
     height: 100%;
@@ -37,26 +90,24 @@ main{
     flex-direction: column;
     position: relative;
     overflow: visible;
+    justify-content: center;
+    align-items: center;
     bottom:80px;
 }
 /* Profile Picture */
 .profile-picture-icon{
+    box-sizing: content-box;
     border-radius: 50%;
     border: 5px solid white ;
+    width:96px;
+    margin-top:25px;
+    margin-bottom: 0px;
+    /* margin-left: 60px; */
 }
 .profile-picture-icon img{
     border-radius: 50%;
 }
-
-/* Card Component User info section */
-/* .user-base-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
-/* section{
-
-} */
+/* Card Component's Section element */
 section .user-base-info{
     display:flex;
     flex-direction: column;
@@ -64,20 +115,25 @@ section .user-base-info{
     align-items: center;
     list-style: none;
 }
+section .user-base-info  .data-hr{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    width: 350px;
+    background-color: hsla(0, 0%, 59%, 0.281);
+}
 section .user-base-info .base-data{
     display: flex;
     flex-direction: row;
     margin: 5px;
-    /* padding: 5px; */
 }
 section .user-base-info .base-data div{
     display: flex;
     flex-direction: row;
-    /* margin: 5px; */
     padding: 5px;
 }
-section .profile-icon{
-
+section .user-base-info .base-data .user-age, section .user-base-info .location{
+    color: hsl(0, 0%, 59%);
+    font-weight: 500;
 }
 
 /* Profile Stats */
@@ -86,7 +142,8 @@ section .user-base-info .profile-stats{
     flex-direction: row;
     list-style: none;
     height: 50px;
-    padding:0
+    padding:0;
+    margin-top:0px;
 }
 section .user-base-info .profile-stats .profile-stats-unit {
     display: flex;
@@ -103,7 +160,14 @@ section .user-base-info .profile-stats .profile-stats-unit > .stat-count h6{
     margin:0;
     font-size: 15px;
 }
-section .user-base-info .profile-stats .profile-stats-unit > .stat-count a{
-    font-size: 10px;
+section .user-base-info .profile-stats .profile-stats-unit >  a{
+    font-size: 15px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 500;
+    text-decoration: none;
     
+}
+section .user-base-info .base-data .username, section .user-base-info .profile-stats .profile-stats-unit > .stat-count{
+    font-size: 18px;
+    font-weight: 700;
 }
