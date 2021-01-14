@@ -181,29 +181,60 @@ section .user-base-info .base-data .username, section .user-base-info .profile-s
         width: 375px;
         margin: 0 auto;
     }
+    /* Profile Card Component */
     .profile-card-component{
         display: flex;
-        margin-top: 22%;
-        margin-left:6%;
-        margin-right: 6%;
-        height: 374px;
-        width: 326px;
+        height: 621px;
+        width: 564px;
+        /* height: 414px;
+        width: 376px; */
         position: relative;
-        left:30%;
+        /* position: absolute; */
+        top:120px;
+        bottom:30%;
+        left:175px;
+        /* right:30px; */
         /* right:50%; */
     }
-    .background-pattern{
-        width:inherit;
-        height: inherit;
+    .profile-card-component .card-background{
+        height: 199.5px;
     }
-    .background-pattern-top{
-        height: 50%;
-        bottom: 10px;
+    .profile-picture-icon{
+        width: 154px;
+        height: 154px;
+
+    }
+    .profile-picture-icon img{
+        width: 154px;
+        height: 154px;
+
+    }
+    .profile-card-component  main{
+        height: 444px;
+        width: 525px;
+    }
+
+    /* BG Pattern */
+    .bg-pattern{
+        width:375px;
+        height: 700px;
+    }
+    .bg-pattern-top{
+        position: relative;
+        right: 500px;
+        rotate: 50deg;
+    }
+    .bg-pattern-bottom{
+        position: relative;
+        top:-350px;
+        bottom: 600px;
         right: 50px;
+        left:400px;
         rotate: 50deg;
     }
     .attribution{
         position: relative;
         left:110px;
+        top:500px;
     }
 }
