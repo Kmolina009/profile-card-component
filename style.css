@@ -198,6 +198,7 @@ section .user-base-info .base-data .username, section .user-base-info .profile-s
     }
     .profile-card-component .card-background{
         height: 199.5px;
+        width: 100%;
     }
     .profile-picture-icon{
         width: 154px;
@@ -207,7 +208,6 @@ section .user-base-info .base-data .username, section .user-base-info .profile-s
     .profile-picture-icon img{
         width: 154px;
         height: 154px;
-
     }
     .profile-card-component  main{
         height: 444px;
