@@ -10,15 +10,11 @@
     src:url(https://fonts.google.com/specimen/Kumbh+Sans);
 
 }
-/* Variable */
-/* --secondary-color(0, 0%, 59%); */
 /* Main area */
-html{
-    height: 722px;
-}
+
 body{
-    height: 722px;
-    width: 1440px;
+    max-height: 722px;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -34,7 +30,7 @@ body article{
 /* Background Patterns */
 .bg-pattern{
     height:722px;
-    widows: 3000px;
+    /* width: 3000px; */
     position: absolute;
     z-index: -1;
     overflow: visible;
@@ -59,12 +55,16 @@ body article{
     height: 750px;   
     rotate: 1 -0.5 1 180deg
 }
+
+
 /* Profile card component */
 .profile-card-component{
     font-family: "Kumbh-Sans", sans-serif;
     overflow: hidden;
-    height: 370px;
-    width: 350px;
+    /* height: 370px; */
+    height: 374px;
+    /* width: 350px; */
+    width: 326px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,4 +170,71 @@ section .user-base-info .profile-stats .profile-stats-unit >  a{
 section .user-base-info .base-data .username, section .user-base-info .profile-stats .profile-stats-unit > .stat-count{
     font-size: 18px;
     font-weight: 700;
+}
+/* Media Query for mobile */
+@media(max-device-width:375px){
+    body{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        height: inherit;
+        width: 375px;
+        margin: 0 auto;
+    }
+    /* Profile Card Component */
+    .profile-card-component{
+        display: flex;
+        height: 621px;
+        width: 564px;
+        /* height: 414px;
+        width: 376px; */
+        position: relative;
+        /* position: absolute; */
+        top:120px;
+        bottom:30%;
+        left:175px;
+        /* right:30px; */
+        /* right:50%; */
+    }
+    .profile-card-component .card-background{
+        height: 199.5px;
+        width: 100%;
+    }
+    .profile-picture-icon{
+        width: 154px;
+        height: 154px;
+
+    }
+    .profile-picture-icon img{
+        width: 154px;
+        height: 154px;
+    }
+    .profile-card-component  main{
+        height: 444px;
+        width: 525px;
+    }
+
+    /* BG Pattern */
+    .bg-pattern{
+        width:375px;
+        height: 700px;
+    }
+    .bg-pattern-top{
+        position: relative;
+        right: 500px;
+        rotate: 50deg;
+    }
+    .bg-pattern-bottom{
+        position: relative;
+        top:-350px;
+        bottom: 600px;
+        right: 50px;
+        left:400px;
+        rotate: 50deg;
+    }
+    .attribution{
+        position: relative;
+        left:110px;
+        top:500px;
+    }
 }
