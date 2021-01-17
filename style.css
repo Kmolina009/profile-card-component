@@ -167,6 +167,15 @@ section .user-base-info .profile-stats .profile-stats-unit >  a{
     text-decoration: none;
     
 }
+/* hover pseudo-class */
+section .user-base-info .profile-stats .profile-stats-unit >  a:hover{
+    font-size: 15px;
+    /* color: hsl(233, 100%, 2%); */
+    color: hsl(228, 5%, 20%);
+    font-weight: 700;
+    text-decoration: none;
+    
+
 section .user-base-info .base-data .username, section .user-base-info .profile-stats .profile-stats-unit > .stat-count{
     font-size: 18px;
     font-weight: 700;
