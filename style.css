@@ -21,16 +21,19 @@ body{
     justify-items: center;
     align-items: center;
     background-color: rgb(25, 161, 173);
-
+    background-image: url(./images/bg-pattern-top.svg),url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    /* background-position: right 50vw bottom 50vh, left 50vw top 50vh; */
+    background-position: right 800px bottom 300px, left 800px top 300px;
+    overflow: hidden;
 }
 body article{
     margin: 10%;
 }
 
 /* Background Patterns */
-.bg-pattern{
+  .bg-pattern{
     height:722px;
-    /* width: 3000px; */
     position: absolute;
     z-index: -1;
     overflow: visible;
@@ -51,9 +54,12 @@ body article{
     position: relative;
     left:50px;
     /* left:5%; */
-    top:300px;
+    /* top:300px;
     height: 750px;   
-    rotate: 1 -0.5 1 180deg
+
+    rotate: 1 -0.5 1 180deg 
+ } */ 
+/*     rotate: 1 -0.5 1 180deg */
 }
 
 
