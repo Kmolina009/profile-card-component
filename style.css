@@ -31,38 +31,6 @@ body main{
     margin: 10%;
 }
 
-/* Background Patterns */
-  .bg-pattern{
-    height:722px;
-    position: absolute;
-    z-index: -1;
-    overflow: visible;
-    height: 100%;
-}
-.bg-pattern-top{
-    z-index: -1;
-    overflow:visible;
-    position: relative;
-    height: 750px;
-    right: 50px;
-    bottom:300px;
-    rotate: 1 -0.5 1 25deg;
-}
-.bg-pattern-bottom{
-    z-index: -2;
-    overflow:visible;
-    position: relative;
-    left:50px;
-    /* left:5%; */
-    /* top:300px;
-    height: 750px;   
-
-    rotate: 1 -0.5 1 180deg 
- } */ 
-/*     rotate: 1 -0.5 1 180deg */
-}
-
-
 /* Profile card component */
 .profile-card-component{
     font-family: "Kumbh-Sans", sans-serif;
@@ -91,7 +59,9 @@ body main{
     width: 100%;
     /* overflow:unset; */
 }
-.card-container{
+
+/******************Card Container************************/
+.profile-card-component .card-container{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -99,6 +69,7 @@ body main{
     justify-content: center;
     align-items: center;
     bottom:80px;
+    width: 100%;
 }
 /* Profile Picture */
 .profile-picture-icon{
@@ -117,11 +88,14 @@ body main{
 section .user-base-info{
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
+    /* background-color: black; */
+
 }
-section .user-base-info  .data-hr{
+
+section   .data-hr{
     margin-top: 50px;
     margin-bottom: 0px;
     width: 350px;
@@ -130,48 +104,51 @@ section .user-base-info  .data-hr{
 section .user-base-info .base-data{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     margin: 5px;
 }
-section .user-base-info .base-data div{
+section .user-base-info .base-data .user-age{
     display: flex;
     flex-direction: row;
-    padding: 5px;
+    padding-left: 5px;
 }
 section .user-base-info .base-data .user-age, section .user-base-info .location{
     color: hsl(0, 0%, 59%);
     font-weight: 500;
+    font-size:18px ;
 }
 
 /* Profile Stats */
-section .user-base-info .profile-stats{
+section  .profile-stats{
     display:flex;
     flex-direction: row;
     list-style: none;
+        justify-content: space-evenly;
     height: 50px;
     padding:0;
     margin-top:0px;
 }
-section .user-base-info .profile-stats .profile-stats-unit {
+section  .profile-stats .profile-stats-unit {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     justify-items: center;
     margin: 5px;
 }
-section .user-base-info .profile-stats .profile-stats-unit .stat-count{
+/* section .user-base-info .profile-stats .profile-stats-unit .stat-count{
     margin: 5px 0px;
-}
-section .user-base-info .profile-stats .profile-stats-unit > .stat-count h6{
+} */
+/* section .user-base-info .profile-stats .profile-stats-unit > .stat-count{
     margin:0;
     font-size: 15px;
-}
-section .user-base-info .profile-stats .profile-stats-unit >  a{
+} */
+.profile-card-component .card-container section  .profile-stats .profile-stats-unit >  a{
     font-size: 15px;
     color: hsl(0, 0%, 59%);
     font-weight: 500;
     text-decoration: none;
-    
+    /* background-color: blue; */
 }
 /* hover pseudo-class */
 section .user-base-info .profile-stats .profile-stats-unit >  a:hover{
@@ -181,8 +158,9 @@ section .user-base-info .profile-stats .profile-stats-unit >  a:hover{
     font-weight: 700;
     text-decoration: none;
     
+}
 
-section .user-base-info .base-data .username, section .user-base-info .profile-stats .profile-stats-unit > .stat-count{
+section .user-base-info .base-data .username, section  .profile-stats .profile-stats-unit > .stat-count{
     font-size: 18px;
     font-weight: 700;
 }
