@@ -27,7 +27,7 @@ body{
     background-position: right 800px bottom 300px, left 800px top 300px;
     overflow: hidden;
 }
-body article{
+body main{
     margin: 10%;
 }
 
@@ -91,7 +91,7 @@ body article{
     width: 100%;
     /* overflow:unset; */
 }
-main{
+.card-container{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -224,7 +224,7 @@ section .user-base-info .base-data .username, section .user-base-info .profile-s
         width: 154px;
         height: 154px;
     }
-    .profile-card-component  main{
+    .profile-card-component  .card-container{
         height: 444px;
         width: 525px;
     }
